@@ -423,7 +423,7 @@ h3.banner__title {
   box-shadow: 0 1px 5px #666;
   border-radius: 5px;
   display: none;
-  z-index: 1;
+  z-index: 1000;
   list-style: none;
   height: 350px;
 }
@@ -1277,7 +1277,7 @@ label.color-lbl-size.active {
   color: var(--white-color);
 }
 
-label.color-lbl-size.disable {
+.disable {
   pointer-events: none;
   cursor: default;
   opacity: 0.6;
@@ -1303,9 +1303,8 @@ a.openFitChartTrigger {
   padding: 18px;
   text-align: center;
 }
-
 .select-quantity {
-  width: 70px;
+  width: 60px;
   align-items: stratch;
   border: 1px solid #e5e5e5;
   border-radius: 8px;
@@ -1315,6 +1314,9 @@ a.openFitChartTrigger {
   margin-right: 0;
   white-space: nowrap;
   position: relative;
+}
+.select-quantity:focus {
+  outline: none;
 }
 
 select.input-text.qty.text {
@@ -1326,8 +1328,8 @@ select.input-text.qty.text {
   cursor: pointer;
   font-family: "Avenir Next LT Pro Demi", Arial, Helvetica, sans-serif;
   padding-left: 19px;
-  width: 60px;
   font-size: 1.4rem;
+  outline: none;
 }
 
 .select-quantity-addcart {
