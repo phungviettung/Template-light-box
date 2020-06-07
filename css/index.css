@@ -672,6 +672,26 @@ a.info_right-link {
   display: flex;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+  position: absolute;
+  top: -10%;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 15%;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+}
+
 .carousel-inner .carousel-item-right.active,
 .carousel-inner .carousel-item-next {
   transform: translateX(16.6666%);
@@ -794,7 +814,6 @@ li.menu2__item:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-
 .modal__body {
   background: var(--white-color);
   position: absolute;
@@ -817,7 +836,6 @@ li.menu2__item:hover {
   transform: translateX(100%);
 }
 
-
 .cart__empty {
   width: 100%;
   height: 100%;
@@ -825,9 +843,7 @@ li.menu2__item:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-
 }
-
 
 h2.cart__empty-title {
   font-size: 2.4rem;
@@ -922,6 +938,7 @@ span.timer-icon {
   background-position: center;
   background-repeat: no-repeat;
   background-color: initial;
+  display: block;
 }
 
 span.timer-message {
@@ -1087,3 +1104,324 @@ span.cart__footer-summary-total {
   margin-bottom: 15px;
   text-align: center;
 }
+
+/* product detail  */
+
+img.product__detail-img--small {
+  width: 100%;
+}
+ul.product-img-list {
+  list-style: none;
+}
+
+li.product-img-item {
+  margin-bottom: 5px;
+  border: 1px solid #80808057;
+}
+
+li.product-img-item:hover {
+  cursor: pointer;
+  box-shadow: 0 1px 2px #666;
+}
+
+.row.product__detail {
+  height: 600px;
+  margin: 20px 0;
+}
+.product__detail--options {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1.product__detail-title {
+  color: #3a3a3a;
+  display: grid;
+  font-family: "Avenir Next LT Pro", Arial, Helvetica, sans-serif;
+  font-size: 2.9rem;
+  line-height: normal !important;
+  margin-bottom: 0;
+}
+
+i.product__detail-item-star-gold.fas.fa-star {
+  color: var(--gold-color);
+}
+
+span.star-rating {
+  zoom: 1.6;
+  margin: 0 3px 0 0 !important;
+  vertical-align: middle;
+}
+
+span.star-rating i {
+  cursor: pointer;
+}
+
+i.fas.fa-star {
+  color: lightgrey;
+}
+
+span.product__detail-review {
+  color: #3a3a3a;
+  font-size: 1.2em;
+  vertical-align: text-top;
+}
+
+.product__detail-item__price {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+span.product__detail-item__price-old {
+  margin-left: 10px;
+  color: #3a3a3a;
+  text-decoration: line-through;
+}
+
+span.product__detail-item__price-new {
+  color: #d3373c;
+  font-weight: 700;
+}
+
+span.sale_special_day {
+  background-color: #d3373c;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.6rem;
+  margin-left: 10px;
+  padding: 3px;
+  display: inline-block;
+  font-weight: 700;
+}
+
+h4.countdown_product_page.timer_2 {
+  background: #f7ece4;
+  border-radius: 2px;
+  display: flex;
+  font-size: 15px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 10px;
+  position: relative;
+  height: 41px;
+  justify-content: center;
+}
+
+label.color-lbl-text,
+label.color-lbl-size {
+  display: block;
+  padding: 0 5px;
+  border: 2px solid #dbddde;
+  font-weight: 600;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+label.color-lbl-text:hover,
+label.color-lbl-size:hover {
+  cursor: pointer;
+}
+
+input.lbl-radio.ez-attr {
+  display: none;
+}
+
+span.select-color-title {
+  display: flex;
+  font-size: 1.6rem;
+  align-items: center;
+}
+
+.select-color,
+.select-size {
+  display: flex;
+  /* align-items: center; */
+}
+
+.select-color-item {
+  display: flex;
+}
+
+label.color-lbl-text.active {
+  box-shadow: 0 1px 5px #666;
+}
+
+label.color-lbl-size {
+  border-radius: 6px;
+  width: 50px;
+  text-indent: 0;
+  border: 1px solid #222;
+  color: #222;
+}
+
+label.color-lbl-size {
+  border-radius: 6px;
+  width: 50px;
+  text-indent: 0;
+  border: 1px solid #222;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+label.color-lbl-size.active {
+  background: #222;
+  color: var(--white-color);
+}
+
+label.color-lbl-size.disable {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.6;
+}
+
+.chart-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+a.size-chart-popup-trigger,
+a.openFitChartTrigger {
+  color: #3a3a3a;
+  font-family: "Avenir Next LT Pro", Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
+
+.form-text {
+  background: #f7ece4;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  padding: 18px;
+  text-align: center;
+}
+
+.select-quantity {
+  width: 70px;
+  align-items: stratch;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  color: #1b1919;
+  height: 50px;
+  justify-content: center;
+  margin-right: 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+select.input-text.qty.text {
+  background: transparent;
+  height: 100%;
+  border: 0px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  font-family: "Avenir Next LT Pro Demi", Arial, Helvetica, sans-serif;
+  padding-left: 19px;
+  width: 60px;
+  font-size: 1.4rem;
+}
+
+.select-quantity-addcart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add_cart-button {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.delivery-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.delivery-text-1 {
+  font-size: 1.4rem;
+  margin-left: 16px;
+}
+
+div#nosto_pdp_iconsbelowatc {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+.tiles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.product__detail-zoom {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform .5s ease-out;
+}
+
+.product__detail-zoom::before {
+  content: "SUMMER SALE";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36px;
+  background: rgba(212,96,92,1);
+  z-index: 100;
+  display: flex;
+  border-radius: 0 0px 5px 0;
+  color: white;
+  font-size: 1.4rem;
+  align-items: center;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.product__detail-zoom::after {
+  content: "Best Seller";
+  position: absolute;
+  top: 80%;
+  left: 0;
+  height: 30px;
+  width: 100px;
+  background: var(--white-color);
+  z-index: 100;
+  display: flex;
+  border-radius: 0 0px 5px 0;
+  color: #222;
+  font-size: 1.4rem;
+  align-items: center;
+  padding: 10px 15px;
+  font-weight: 500;
+}
+
+
