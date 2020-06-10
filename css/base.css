@@ -6,10 +6,9 @@
 	--text-color:#222;
 	--primary-color:#ee4d2d;
 	--gold-color:#ffce3e;
-	--header-height:72px;
-	--navbar-height:36px;
-	--header-with-search-height: var(--header-height);
-
+	--header-height:106px;
+	--header-with-search-height:72px;
+	--navbar-height:calc(var(--header-height) - var(--header-with-search-heigh));
 };
 
 *{
