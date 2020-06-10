@@ -47,6 +47,7 @@ $(function () {
     $(".modal").addClass("showModal");
     $('.go-back-menu').addClass('hidden');
     $('.icon-close').addClass('hide-on-mobile');
+
   });
 
   $(".modal__overlay, .close-menu").click(function () {
@@ -54,7 +55,10 @@ $(function () {
     $('.modal').removeClass('showModal');
     $('.navbar-menu2').removeClass('menu2-display');
     $('.icon-close').removeClass('hide-on-mobile');
+    $('.menu2-title').text("Browser Category");
   });
+
+
 
   $(".go-back-menu").click(function () {
     $(this).parent().next().children().find('.navbar-menu2').removeClass('menu2-display');

@@ -1024,6 +1024,7 @@ li.menu2__item:hover {
 }
 
 .display {
+  transition: 1s;
   transform: translateX(100%);
 }
 
@@ -1607,7 +1608,7 @@ div#nosto_pdp_iconsbelowatc {
   left: 0;
   height: 36px;
   background: rgba(212,96,92,1);
-  z-index: 100;
+  z-index: 1;
   display: flex;
   border-radius: 0 0px 5px 0;
   color: white;
@@ -1625,7 +1626,7 @@ div#nosto_pdp_iconsbelowatc {
   height: 30px;
   width: 100px;
   background: var(--white-color);
-  z-index: 100;
+  z-index: 1;
   display: flex;
   border-radius: 0 0px 5px 0;
   color: var(--text-color);
