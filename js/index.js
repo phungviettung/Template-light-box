@@ -52,7 +52,7 @@ $(function () {
   $(".modal__overlay, .close-menu").click(function () {
     $(".header__navbar-content").removeClass("navbar-on-mobile")
     $('.modal').removeClass('showModal');
-    $(this).parent().next().children().find('.navbar-menu2').removeClass('menu2-display');
+    $('.navbar-menu2').removeClass('menu2-display');
     $('.icon-close').removeClass('hide-on-mobile');
   });
 
