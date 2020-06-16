@@ -4,7 +4,9 @@
 	--white-color:#fff;
 	--black-color:#000;
 	--text-color:#222;
+	--green-color:#ddebe3;
 	--primary-color:#ee4d2d;
+	--btn-color:#232323;
 	--gold-color:#ffce3e;
 	--header-height:106px;
 	--header-with-search-height:72px;
@@ -65,5 +67,32 @@ html{
 }
 
 
+.btn{
+	padding: 0 12px;
+	min-width: 142px;
+	height: 36px;
+	text-decoration: none;
+	border:none;
+	border-radius: 3px;
+	font-size: 1.5rem;
+	outline: none;
+	cursor: pointer;
+	background : var(--white-color);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	width: 100%;
+	transition: 0.5s;
 
+}
 
+a, a:hover{
+	color: var(--text-color);
+  }
+
+  .btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
