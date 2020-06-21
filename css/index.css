@@ -52,6 +52,9 @@ header.header {
 }
 li.header__navbar-item {
   list-style: none;
+  display: block;
+  padding-bottom: 12px;
+  margin-top: 4px;
 }
 
 li.header__navbar-item:hover {
@@ -1836,6 +1839,13 @@ ul.slick-dots {
 
 ul.slick-dots li {
   margin-right: 10px;
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
 }
 
 ul.slick-dots li button {
